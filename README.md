@@ -1,1 +1,2 @@
-# QYay App!
+# QYay App! - A web application
+## Environment
