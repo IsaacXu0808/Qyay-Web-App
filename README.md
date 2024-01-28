@@ -40,7 +40,7 @@ Local user password: **123456**
 
 Local port: **3306**
 
-Note that the "Hello world!" message and other information are all from the database so you need to copy my database before testing.
+Note that the "Hello world!" message and other information are all from the database so you need to copy my database to your corresponding program data folder before testing.
 
 #### (2) Go to the backend directory (/QYay_Backend) in a console
 
