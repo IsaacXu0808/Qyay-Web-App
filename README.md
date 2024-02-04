@@ -59,37 +59,37 @@ Now the backend server is running on port: http://localhost:5173
 
 # Week 2 Update
 
-## 1. Features Implemeted
+## 1. Features Implemented
 
-##### (1) A home page to select from join / login / register.
+#### (1) A home page to select from join / login / register.
 
-##### (2) A login page to fill in user id and password to login.
+#### (2) A login page to fill in user id and password to login.
 
-##### (3) A register page to create accounts. After registering, redirect to the login page and automatically fill in the user id and password.
+#### (3) A register page to create accounts. After registering, redirect to the login page and automatically fill in the user id and password.
 
-##### (4) After login, user can see thier list of events and a button to create a new event.
+#### (4) After login, the user can see their list of events and a button to create a new event.
 
-##### (5) One can select one of the events in the list to retrieve the information (and get started, not implemented yet) and go back to the event list.
+#### (5) One can select one of the events in the list to retrieve the information (and get started, not implemented yet) and go back to the event list.
 
-##### (6) A create-event page to fill in the information and create an event. A invitation code will generated for future use.
+#### (6) A create-event page to fill in the information and create an event. An invitation code will generated for future use.
 
-##### (7) After creating the event, redirect to the event-info page (like (5)).
+#### (7) After creating the event, redirect to the event-info page (like (5)).
 
-##### (8) Others features include a page of Terms and Policies, a button to sign out, etc.
+#### (8) Other features include a Terms and Policies page, a button to sign out, etc.
 
 #### To conclude, the user (organizer) can sign up (register), sign in (login), create events and see the information of created events.
 
 ## 2. Major Difficulties and Challenges
 
-* ##### Miss the invitation code at first. Everything related to the attributes of an event and the table of events needed to start over.
-* ##### Unfarmiliar with the styling of components.
-* ##### Complicated design and implementation of page-routing, especially routing with parameters in vue3.
+* #### Miss the invitation code at first. Everything related to the attributes of an event and the table of events needed to start over.
+* #### Unfamiliar with the styling of components.
+* #### Complicated design and implementation of page-routing, especially routing with parameters in vue3.
 
-## 3. Learning Resourses
+## 3. Learning Resources
 
-* ##### [Vue.js documentation](https://vuejs.org/guide/introduction.html)
-* ##### [ Bootstrap v5.3 documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
-* ##### [Django documentation](https://docs.djangoproject.com/en/5.0/)
-* ##### [Stack Overflow](https://stackoverflow.com/)
-* ##### [CSDN](https://www.csdn.net/)
+* #### [Vue.js documentation](https://vuejs.org/guide/introduction.html)
+* #### [ Bootstrap v5.3 documentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+* #### [Django documentation](https://docs.djangoproject.com/en/5.0/)
+* #### [Stack Overflow](https://stackoverflow.com/)
+* #### [CSDN](https://www.csdn.net/)
 
