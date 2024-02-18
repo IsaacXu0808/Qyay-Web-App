@@ -30,19 +30,19 @@
 
 #### (0) Make sure you have a up-to-date version of [Node.js](https://nodejs.org/en), [MySQL8.0](https://dev.mysql.com/downloads/) and [Python3.12](https://www.python.org/downloads/) installed before setting up.
 
-#### (1) Setup the database.
+#### (1) Set up the database.
 
 ##### (1.1) Make sure the mysql service is on (for Windows computers, I go to task manager --> service --> mysql80 --> right click and start, or you may [Start MySQL from the Windows Command Line](https://dev.mysql.com/doc/refman/8.0/en/windows-install-archive.html).
 
-Please be aware of your local user name, local user password and local port number.
+Please keep in mind your local user name, local user password and local port number.
 
 ##### (1.2) Create a new database called "qyay". I suggest you use a [MySQL Workbench](https://www.mysql.com/products/workbench/). You can either run the command or use the GUI to manipulate the database.
 
-```sql
+```SQL
 create DATABASE qyay
 ```
 
-##### (1.3) Configure the connection between Django and MySQL. You can change any of these settings in /QYay_Backend//QYay_Backend/settings.py line 89 to 98 into your settings. My settings are as following:
+##### (1.3) Configure the connection between Django and MySQL. You can change any of these settings in /QYay_Backend//QYay_Backend/settings.py lines 89 to 98 into your settings. My settings are as follows:
 
 Database name: **qyay**
 
@@ -62,7 +62,7 @@ python3.12 manage.py makemigrations
 python3.12 manage.py migrate
 ```
 
-An alternative is to copy my database "/qyay/" to your local MySQL data folder. Then you can use my test data which have many items. The following account is recommanded:
+An alternative is to copy my database "/qyay/" to your local MySQL data folder. Then you can use my test data which has many items. The following account is recommended:
 
 User ID:
 
@@ -82,7 +82,7 @@ There are a lot of questions in the event "I2FT event name" for you to test, who
 veHwEj
 ```
 
-#### (2) You need a few Python packages before launching teh backend server. Run the following commands to ensure that they are installed for Python3.12.
+#### (2) You need a few Python packages before launching the backend server. Please run the following commands to ensure that they are installed for Python3.12.
 
 ```cmd
 python3.12 -m pip install django
@@ -104,7 +104,7 @@ python3.12 manage.py runserver
 
 Now the frontend server is running on port: http://localhost:8000.
 
-#### (4) Go to the frontend directory (/QYayApp) in a console. I inculde the modules in the folder so you do not need to install any dependencies. However, to make sure everything needed exists, run the command:
+#### (4) Go to the frontend directory (/QYayApp) in a console. I included the modules in the folder so you do not need to install any dependencies. However, to make sure everything needed exists, run the command:
 
 ```cmd
 npm install
@@ -122,15 +122,15 @@ Now the backend server is running on port: http://localhost:5173
 
 [QYay App!](http://localhost:5173 )
 
-##### (7) The pages are temporarily designed for only (2520 * 1440) display so it is strongly recommanded to zoom in or zoom out the pages to a proper size if you use a display with other sizes (e.g. 80% for a 1920 * 1080 screen).
+##### (7) The pages are temporarily designed for only (2520 * 1440) display so it is strongly recommended to zoom in or zoom out the pages to a proper size if you use a display with other sizes (e.g. 80% for a 1920 * 1080 screen).
 
 # Week 2 Update
 
 ## 1. Features Implemented
 
 * (1) A home page to select from join / login / register.
-* (2) A login page to fill in user id and password to login.
-* (3) A register page to create accounts. After registering, redirect to the login page and automatically fill in the user id and password.
+* (2) A login page to fill in the user ID and password to log in.
+* (3) A register page to create accounts. After registering, redirect to the login page and automatically fill in the user ID and password.
 * (4) After login, the user can see their list of events and a button to create a new event.
 * (5) One can select one of the events in the list to retrieve the information (and get started, not implemented yet) and go back to the event list.
 * (6) A create-event page to fill in the information and create an event. An invitation code will generated for future use.
@@ -143,7 +143,7 @@ Now the backend server is running on port: http://localhost:5173
 
 * Miss the invitation code at first. Everything related to the attributes of an event and the table of events needed to start over.
 * Unfamiliar with the styling of components.
-* Complicated design and implementation of page-routing, especially routing with parameters in vue3.
+* Complicated design and implementation of page routing, especially routing with parameters in vue3.
 
 ## 3. Learning Resources
 
@@ -161,11 +161,11 @@ Now the backend server is running on port: http://localhost:5173
 
 * (2) By entering an event, the organizer can see the question list, go back to    their event list page or terminate the current event. Note that the organizer cannot submit questions.
 
-* (3) An viewer (audience) can input the six-digit invitation code to search for an event on the join page. If the event is currently ongoing, they can enter the event and see the question list.
+* (3) A viewer (audience) can input the six-digit invitation code to search for an event on the join page. If the event is currently ongoing, they can enter the event and see the question list.
 
-* (4) The viewer can see the question list and edit and submit new questions on the question list page. New questions are shown on the bottom of the list. No user info will be associated with questions so that questioning is completely anonymous.
+* (4) The viewer can see the question list and edit and submit new questions on the question list page. New questions are shown at the bottom of the list. No user info will be associated with questions so that questioning is completely anonymous.
 
-To conclude, the following two user stories are implemented. In addition, organizers can edit the status of their events (unactive / ongoing / terminated).
+To conclude, the following two user stories are implemented. In addition, organizers can edit the status of their events (inactive / ongoing / terminated).
 
 * As an attendee, I want to join the event using a unique link or code, so that I can submit my questions.
 * As an attendee, I want to submit questions anonymously, so that I can freely ask questions without any privacy concerns.
@@ -191,13 +191,13 @@ To conclude, the following two user stories are implemented. In addition, organi
 
 * (1) The attendees can upvote questions by clicking a thumb icon on the side of a question.
 
-* (2) The organizer can press a tag beside the ID of a question to mark it as "Answered". The attendees can also see this status of questions (the tags). All users can select a check-box to hide the answered questions.
+* (2) The organizer can press a tag beside the ID of a question to mark it as "Answered". The attendees can also see the status of questions (the tags). All users can select a checkbox to hide the answered questions.
 
-* (3) The web page will do polling to update the question list so that the users (both organizers and attendees) can view the list in a real-time sense. The updated information includes the IDs, the content and the numbers of vote of the questions as well as whether or not they have been answered.
+* (3) The web page will do polling to update the question list so that the users (both organizers and attendees) can view the list in a real-time sense. The updated information includes the IDs, the content and the numbers of votes of the questions as well as whether or not they have been answered.
 
 * (4) The users can sort the questions by  either their IDs or their numbers of votes. By default, the order of the questions follows the IDs.
 
-To conclude, the following four user stories are implemented. In addition, users cam hide answered questions.
+To conclude, the following four user stories are implemented. In addition, users can hide answered questions.
 
 Must-have:
 
@@ -211,7 +211,7 @@ Nice-to-have:
 
 ## 2. Major Difficulties and Challenges
 
-* Real-time update is complex to implement with sockets and my alternative is polling, which does not allow a high perforamce.
+* Real-time update is complex to implement with sockets and my alternative is polling, which does not allow a high performance.
 * The size-fitting is still under construction, not included in the submission.
 
 ## 3. Learning Resources
