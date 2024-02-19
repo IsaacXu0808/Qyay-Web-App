@@ -1,14 +1,38 @@
 # QYay App! - A web application
 
-## 1. Environment
+## 1. Introduction
+
+### (1) Problem Statement
+
+Organizers of live events often face challenges when it comes to managing audience questions during Q&A sessions. Traditional methods, such as passing around a microphone or selecting individuals to speak, can be time-consuming and exclude some attendees' questions. A solution is needed to streamline the Q&A process and ensure that all audience questions are acknowledged and answered.
+
+### (2) Proposed Solution
+
+The QYay! app will address this issue by providing a platform for event organizers to collect and manage audience questions during Q&A sessions. Organizers can create an event on the app and share it with the audience using a unique link or code. Attendees can join the event and submit questions anonymously, without requiring a login, throughout the live session. Additionally, participants can view a real-time list of submitted questions and upvote the ones they want to hear answered. Organizers have access to the same list and can respond to questions, marking them as answered.
+
+### (3) Potential Clients
+
+Event organizers who aim to streamline their Q&A process and ensure that all audience questions are acknowledged and addressed.
+
+### (4) Functional Requirements
+
+1. As an event organizer, I want to create an event on the app, so that I can collect questions from the audience.
+2. As an attendee, I want to join the event using a unique link or code, so that I can submit my questions.
+3. As an attendee, I want to submit questions anonymously, so that I can freely ask questions without any privacy concerns.
+4. As an attendee, I want to view and upvote questions submitted by others, so that the most popular questions can be identified.
+5. As an organizer, I want to view a real-time list of questions, so that I can manage and respond to them effectively during the event.
+6. As an organizer, I want to filter and sort questions, so that I can prioritize them based on popularity or relevance.
+7. As an organizer, I want to mark questions as answered, so that the audience knows which questions have been addressed.
+
+## 2. Tech Stack
+
+### (0) Local Development Environment
 
 **OS: Windows 10**
 
 **IDE: VSCode**
 
 **Browser: Edge**
-
-## 2. Tech Stack
 
 ### (1) Frontend:
 
@@ -158,11 +182,8 @@ Now the backend server is running on port: http://localhost:5173
 ## 1. Features Implemented
 
 * (1) Organizers can activate (start) and enter an event on the entry page. They go back to the event list page after termination.
-
 * (2) By entering an event, the organizer can see the question list, go back to    their event list page or terminate the current event. Note that the organizer cannot submit questions.
-
 * (3) A viewer (audience) can input the six-digit invitation code to search for an event on the join page. If the event is currently ongoing, they can enter the event and see the question list.
-
 * (4) The viewer can see the question list and edit and submit new questions on the question list page. New questions are shown at the bottom of the list. No user info will be associated with questions so that questioning is completely anonymous.
 
 To conclude, the following two user stories are implemented. In addition, organizers can edit the status of their events (inactive / ongoing / terminated).
@@ -190,11 +211,8 @@ To conclude, the following two user stories are implemented. In addition, organi
 ## 1. Features Implemented
 
 * (1) The attendees can upvote questions by clicking a thumb icon on the side of a question.
-
 * (2) The organizer can press a tag beside the ID of a question to mark it as "Answered". The attendees can also see the status of questions (the tags). All users can select a checkbox to hide the answered questions.
-
 * (3) The web page will do polling to update the question list so that the users (both organizers and attendees) can view the list in a real-time sense. The updated information includes the IDs, the content and the numbers of votes of the questions as well as whether or not they have been answered.
-
 * (4) The users can sort the questions by  either their IDs or their numbers of votes. By default, the order of the questions follows the IDs.
 
 To conclude, the following four user stories are implemented. In addition, users can hide answered questions.
@@ -221,5 +239,3 @@ Nice-to-have:
 * [Django documentation](https://docs.djangoproject.com/en/5.0/)
 * [Stack Overflow](https://stackoverflow.com/)
 * [CSDN](https://www.csdn.net/)
-
-
